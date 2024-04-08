@@ -7,7 +7,7 @@ if __name__ == "__main__":
         output_csv=r'C:\path\to\output.csv', #output file to be created
         in_crs='EPSG:28992', #crs of input csv
         raster_crs='EPSG:3035', #crs of rasters to be used (EPSG:3035 in case of EXPANSE rasters)
-        sep = ';', #column separator in input file
+        sep = ';', #column separator in input file, output will always be semi-colon
         decimal=',', #decimal separator in input file
-        writemethod='concat'
+        writemethod='concat' #method to write output to csv, "concat"  is fast but memory-intensive, "rows" is slow but requires no extra memory"
     )
