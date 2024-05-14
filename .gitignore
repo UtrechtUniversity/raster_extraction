@@ -5,3 +5,4 @@ venv
 main.py
 .vscode
 __pycache__
+buffer_extraction.py
