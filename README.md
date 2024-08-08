@@ -26,7 +26,7 @@ if __name__ == "__main__":
     )
 ```
 ## Requirements
-- GDAL
+- GDAL (wheel included)
 - NumPy
 - Pandas
 - PyProj
