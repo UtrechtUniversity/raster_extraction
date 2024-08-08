@@ -5,7 +5,7 @@ This Python script provides functions to process raster files in chunks and extr
 1. Clone this repo
 2. Create a virtual environment with `pythom -m venv 'C:\path\to\cloned\repo\venv'`
 3. Activate the virtual environment with `C:\path\to\cloned\repo\venv\scripts\activate`
-4. pip install -r requirements.txt
+4. Install the dependencies with pip install -r requirements.txt
 5. Carefully change the arguments in example_run.py (see Example), read the comments after the arguments for instructions and save the file
 6. Run the newly saved file using `python example_run.py`
 
