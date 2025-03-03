@@ -1,4 +1,4 @@
-import raster_extraction_functions as ref
+import raster_extraction_tool.raster_extraction_functions as ref
 
 if __name__ == "__main__":
     ref.extract_values(

@@ -16,28 +16,22 @@ def calculate_chunk_size(dataset, max_chunk_memory=500 * 1024**2):
     Returns:
     tuple: (chunk_width, chunk_height) representing the dimensions of the chunk.
     """
-    # Get the first raster band
     band = dataset.GetRasterBand(1)
     
-    # Convert GDAL data type to NumPy data type
     dtype = gdal_array.GDALTypeCodeToNumericTypeCode(band.DataType)
     
-    # Get the size of the data type in bytes
     dtype_size = np.dtype(dtype).itemsize
     
-    # Get the raster dimensions
     raster_x_size = dataset.RasterXSize
     raster_y_size = dataset.RasterYSize
 
-    # Calculate the maximum number of pixels that can be read within the memory limit
     max_pixels = max_chunk_memory // dtype_size
 
-    # Determine the suitable chunk size based on raster dimensions and memory limit
     if raster_x_size * raster_y_size <= max_pixels:
-        # If the entire raster fits within the memory limit, no need to chunk
+        #if the entire raster fits within the memory limit, no need to chunk
         return raster_x_size, raster_y_size
     else:
-        # Calculate the chunk height that fits within the memory limit
+        #calculate the chunk height that fits within the memory limit
         chunk_width = raster_x_size
         chunk_height = max(1, max_pixels // chunk_width)
     

@@ -1,3 +1,16 @@
+Metadata-Version: 2.1
+Name: raster-extraction-tool
+Version: 0.1.1
+Summary: Extract raster data at input coordinates. Meant for processing many rasters at once.
+Home-page: https://github.com/UtrechtUniversity/raster_extraction
+Author: L. Roga
+Author-email: l.q.roga@uu.nl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
 # Raster Extraction Functions
 This Python script provides functions to process raster files in chunks and extract values at specified coordinates using multiprocessing. The script is designed to handle large raster datasets efficiently by dividing the workload across multiple CPU cores.
 
