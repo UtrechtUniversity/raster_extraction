@@ -1,20 +1,21 @@
 # Raster Extraction Functions
 This Python script provides functions to process raster files in chunks and extract values at specified coordinates using multiprocessing. The script is designed to handle large raster datasets efficiently by dividing the workload across multiple CPU cores.
 
-## 
+## NOTE
 Note: GDAL cannot be installed via pip on Windows. Download the wheel for your python version here: 
 
 https://github.com/cgohlke/geospatial-wheels/releases
 
-Then install with: pip install "path/to/.whl"chat
+Then install with: pip install "path/to/.whl"
 
 ## Usage
-1. Clone this repo
-2. Create a virtual environment with `pythom -m venv 'C:\path\to\cloned\repo\venv'`
-3. Activate the virtual environment with `C:\path\to\cloned\repo\venv\scripts\activate`
-4. Install the dependencies (See above note for GDAL)
-5. Carefully change the arguments in example_run.py (see Example), read the comments after the arguments for instructions and save the file
-6. Run the newly saved file using `python example_run.py`
+1. Create a virtual environment with `pythom -m venv 'C:\path\to\cloned\repo\venv'`
+2. Activate the virtual environment with `C:\path\to\cloned\repo\venv\scripts\activate`
+3. Install using ```pip install raster-extraction-tools```
+4. Install GDAL (For Windows, see the note above)
+4. Copy the code from example_run.py or from Example down below
+5. Carefully change the parameters keeping in mind the commented instructions (all rasters should be in 1 directory with no subdirectories)
+6. Save and run the python file
 
 ### Example
 ```python
@@ -37,7 +38,6 @@ if __name__ == "__main__":
 - NumPy
 - Pandas
 - PyProj
-- GDAL
 
 ## Installation
 Make sure you have the required libraries installed. You can install them using pip:

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="raster_extraction_tool",
-    version="0.1.1",
+    version="0.1.2",
     author="L. Roga",
     author_email="l.q.roga@uu.nl",
     description="Extract raster data at input coordinates. Meant for processing many rasters at once.",
@@ -12,7 +12,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
-        "numpy",
+        "numpy==1.26.4",
         "pandas",
         "pyproj",
     ],

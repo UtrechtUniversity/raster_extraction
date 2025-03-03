@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: raster-extraction-tool
-Version: 0.1.1
+Version: 0.1.2
 Summary: Extract raster data at input coordinates. Meant for processing many rasters at once.
 Home-page: https://github.com/UtrechtUniversity/raster_extraction
 Author: L. Roga
