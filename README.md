@@ -6,6 +6,8 @@ Note: GDAL cannot be installed via pip on Windows. Download the wheel for your p
 
 https://github.com/cgohlke/geospatial-wheels/releases
 
+Keep in mind your python version (for example for python 3.11, download a wheel with "cp311".)
+
 Then install with: pip install "path/to/.whl"
 
 ## Usage
