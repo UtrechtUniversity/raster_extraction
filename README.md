@@ -13,7 +13,7 @@ Then install with: pip install "path/to/.whl"
 ## Usage
 1. Create a virtual environment with `pythom -m venv venv'`
 2. Activate the virtual environment with `venv\scripts\activate`
-3. Install using ```pip install raster-extraction-tools```
+3. Install using ```pip install raster-extraction-tool```
 4. Install GDAL (For Windows, see the note above)
 4. Copy the code from example_run.py or from Example down below
 5. Carefully change the parameters keeping in mind the commented instructions (all rasters should be in 1 directory with no subdirectories)
